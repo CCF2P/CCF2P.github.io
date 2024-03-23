@@ -1,0 +1,9 @@
+.Remove-button {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.Remove-button > button {
+  color: white;
+  background-color: red;
+}

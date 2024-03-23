@@ -1,0 +1,26 @@
+.tab {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.tab > .tab-content {
+  display: none;
+  width: 75%;
+  padding-left: 1rem;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+.tab-content > .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  overflow: auto;
+}

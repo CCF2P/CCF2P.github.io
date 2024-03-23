@@ -1,0 +1,40 @@
+.tab-nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 25%;
+	border: 1px solid black;
+}
+
+.tab-content-footer {
+	margin-top: auto;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.tab-nav > .tab-link-footer {
+	margin-top: auto;
+	border-top: 1px solid black;
+	border-bottom: 0;
+}
+
+.tab-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+	text-decoration: none;
+	color: #0d6efd;
+	border-bottom: 1px solid black;
+}
+
+#content-1:target ~ .tab-nav > [href="#content-1"],
+#content-2:target ~ .tab-nav > [href="#content-2"],
+#content-3:target ~ .tab-nav > [href="#content-3"],
+#content-4:target ~ .tab-nav > [href="#content-4"],
+#content-5:target ~ .tab-nav > [href="#content-5"],
+#content-6:target ~ .tab-nav > [href="#content-6"] {
+  cursor: default;
+  color: #fff;
+  background-color: #0d6efd;
+}

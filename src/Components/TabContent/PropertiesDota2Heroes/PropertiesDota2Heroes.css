@@ -1,0 +1,6 @@
+.property-li {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-bottom: 0.5rem;
+}
